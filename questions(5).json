@@ -1,0 +1,42 @@
+[
+  {
+    "q": "Which of the following is a common sign of a phishing email?",
+    "choices": [
+      "0. Email from a known contact with expected content",
+      "1. Spelling mistakes and urgent call to action",
+      "2. Secure domain and verified sender",
+      "3. Personalized greeting and correct grammar"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "What does GDPR stand for?",
+    "choices": [
+      "0. General Data Protection Regulation",
+      "1. Global Data Privacy Regulation",
+      "2. Government Data Protection Rules",
+      "3. General Digital Privacy Regulation"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Which of the following is a best practice for securing cloud environments?",
+    "choices": [
+      "0. Using default credentials",
+      "1. Disabling multi-factor authentication",
+      "2. Regularly updating access controls and monitoring logs",
+      "3. Sharing access keys via email"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "HTML stands for?",
+    "choices": [
+      "0. HyperText Markup Language",
+      "1. Home Tool Markup Language",
+      "2. Hyperlink Text Marking",
+      "3. None"
+    ],
+    "answer": 0
+  }
+]
