@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>iSEC Dimension3.0 Games - Snakes & Ladders (Browser)</title>
+  <title>iSEC Dimension 3.0 Game - Snakes & Ladders</title>
   <style>
     :root{--size:600px;--cell:calc(var(--size)/10)}
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;display:flex;gap:20px;padding:20px;background:#f2f6f9}
@@ -39,6 +39,12 @@
     .uploader{display:flex;gap:8px;align-items:center;margin-top:8px}
     .uploader input{cursor:pointer}
     @media(max-width:900px){body{flex-direction:column;align-items:center}} 
+  
+    #startBtn { background: green; }
+    #startBtn:hover { background: darkgreen; }
+    #rollBtn { background: orange; }
+    #rollBtn:hover { background: darkorange; }
+
   </style>
 </head>
 <body>
@@ -48,7 +54,7 @@
   </div>
 
   <div class="controls">
-    <h2>Snakes & Ladders — Quiz Edition</h2>
+    <h2>iSEC Dimension 3.0 Game - Snakes & Ladders</h2>
     <div class="players" id="playerInputs"></div>
     <div style="display:flex;gap:8px;margin-bottom:8px">
       <button id="addPlayer">Add Player</button>
@@ -81,6 +87,11 @@
     </div>
 
     <div style="margin-top:12px">
+      <h4>Game Log</h4>
+      <div class="log" id="log"></div>
+    </div>
+
+    <div style="margin-top:12px">
       <h4>Question Bank (editable)</h4>
       <small class="small">Edit JSON array of questions below. Each question: {"q":"...","choices":["a","b"],"answer":0}</small>
       <textarea id="questionData"></textarea>
@@ -89,11 +100,6 @@
         <button id="saveQuestions">Save Questions</button>
         <button id="loadSample" class="secondary">Load Questions from File</button>
       </div>
-    </div>
-
-    <div style="margin-top:12px">
-      <h4>Game Log</h4>
-      <div class="log" id="log"></div>
     </div>
 
     <p class="footer-hint">Open this file in your browser. To share, upload to any static host (GitHub Pages). For networked multiplayer, ask and I'll add a simple server version.</p>
